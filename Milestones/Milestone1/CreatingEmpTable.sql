@@ -8,6 +8,6 @@ designation varchar(30) NOT NULL,
 joiningDate date NOT NULL,
 salary float NOT NULL,
 deptId int NOT NULL,
-nationality varchar(30) NOT NULL
+nationality varchar(30) NOT NULL,
 isHead varchar(10) DEFAULT NULL
 );

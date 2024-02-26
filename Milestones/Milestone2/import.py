@@ -3,14 +3,14 @@ import csv,os
 from dotenv import load_dotenv
 load_dotenv()
 
-# user=os.getenv("user")
-# host=os.getenv("host")
-# port=os.getenv("port")
-# database=os.getenv("database")
-# password=os.getenv("password")
+USER=OS.GETENV("USER")
+HOST=OS.GETENV("HOST")
+PORT=OS.GETENV("PORT")
+DATABASE=OS.GETENV("DATABASE")
+PASSWORD=OS.GETENV("PASSWORD")
 #print(user,host,port,database,password)
 
-conn = mysql.connector.MySQLConnection(user ="root",host="127.0.0.1",port=3306,database="company",password="India@123")
+conn = mysql.connector.MySQLConnection(user =user,host=host,port=port,database=database,password=password)
 logging.basicConfig(filename='Logs/output.log',level=logging.ERROR,format='%(asctime)s %(levelname)-8s %(message)s',datefmt='%Y-%m-%d %H:%M:%S')
 cursor = conn.cursor()
 try:
