@@ -5,15 +5,15 @@ Welcome to the repository for the assignment in Python+Mysql. The assignment is 
 
 # Milestone 1: Database Setup and Initial Queries
 
-## 2. Project Description
+## 1. Project Description
 This milestone focuses on setting up the database, creating tables, inserting data, and executing initial SQL queries to analyze the dataset for the assignment project.
 
-## 3. Table of Contents
+## 2. Table of Contents
 - Installation
 - SQL Commands
 - Initial Data Analysis
 
-## 4. How to Install and Run the Project
+## 3. How to Install and Run the Project
 ### Installation
 To install MySQL on a Linux environment, follow these steps:
 1. Update the package index: `sudo apt-get update`
@@ -30,7 +30,7 @@ To install MySQL on a Linux environment, follow these steps:
 5. Find the month with the maximum number of Indian employees celebrating their birthday.
 6. Calculate the average salary of all department heads.
 
-## 5. How to Use the Project
+## 4. How to Use the Project
 1. Install MySQL on your Linux environment.
 2. Execute the SQL commands provided in the README to set up the database, create tables, insert data, and perform initial data analysis.
 3. Modify the SQL commands as needed to customize the database and analysis.
