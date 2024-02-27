@@ -1,15 +1,16 @@
 from sqlalchemy import create_engine
 import pandas as pd
 import urllib.parse
+import os
 
-hostname='127.0.0.1'
-username='root'
-password='India@123'
-port=3306
-database='company'
+user=os.getenv("user")
+host=os.getenv("host")
+port=os.getenv("port")
+database=os.getenv("database")
+password=os.getenv("password")
 
 encoded_password = urllib.parse.quote_plus(password)
-engine=create_engine('mysql+pymysql://'+username+':'+encoded_password+'@'+hostname+':'+str(port)+'/'+database)
+engine=create_engine('mysql+pymysql://'+user+':'+encoded_password+'@'+host+':'+str(port)+'/'+database)
 
 conn=engine.connect()
 
